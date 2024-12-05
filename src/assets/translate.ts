@@ -1,11 +1,10 @@
-import gr from '../..//gr.json';
+import gr from '../../gr.json';
 
 
 const translations = {
-  en,
-  es
+    gr,
 };
 
 export const t = (key: string, lang: string) => {
-  return translations[lang]?.[key] || key;
+ //return translations[lang]?.[key] || key;
 };
