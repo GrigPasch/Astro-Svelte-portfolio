@@ -1,11 +1,27 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LanguageSwitcher from '../components/LanguageSwitcher.svelte'
+import HeaderMenu from '../components/HeaderMenu.svelte';
+import Home from '../components/Home.svelte';
+import Breakpoint from '../components/Breakpoint.svelte';
+import About from '../components/About.svelte';
+import Projects from '../components/Projects.svelte';
+import Form from '../components/Form.svelte'
+import Footer from '../components/Footer.svelte'
 ---
 
-<Layout>
-	<Welcome />
+<Layout title = 'Grigoris Portfolio Sample'>
+	<HeaderMenu/>
+	<LanguageSwitcher/>
+	<main id="home" class="mt-16 scroll-mt-36">
+		<Home/>
+		<Breakpoint/>
+		<About/>
+		<Breakpoint/>
+		<Projects/>
+		<Breakpoint/>
+		<Form/>
+		<Footer/>
+	</main>
+	
 </Layout>
