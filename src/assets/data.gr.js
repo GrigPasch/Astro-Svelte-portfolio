@@ -24,10 +24,10 @@ export const info = [
 export const locales = [
     {
         text: 'Ελληνικά',
-        link: 'http://localhost:4321/gr/#home'
+        link: 'https://astro-svelte-portfolio.vercel.app/gr/#home'
     },
     {
         text: 'Αγγλικά',
-        link: 'http://localhost:4321/en/#home'
+        link: 'https://astro-svelte-portfolio.vercel.app/en/#home'
     }
 ]
