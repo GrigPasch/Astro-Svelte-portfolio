@@ -1,26 +1,32 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import '../assets/style.css';
+import {  getRelativeLocaleUrlList } from 'astro:i18n';
+
+const localeUrls = getRelativeLocaleUrlList();
 interface Props {
 	title: string;
 }
 
-const {title} = Astro.props;
+const {language,title} = Astro.props;
 
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={language} class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-		<title>Astro Portfolio</title>
+		<title>Astro-Svelte Portfolio</title>
 		<ClientRouter/>
 	</head>
 	<body class="bg-black text-white">
+		<nav>
+			{localeUrls.map(s => <a href={s} class="link">{s}</a>)}
+		</nav>
 		<slot />
 	</body>
 </html>

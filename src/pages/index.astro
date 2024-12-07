@@ -1,18 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher.svelte'
-import HeaderMenu from '../components/HeaderMenu.svelte';
-import Home from '../components/Home.svelte';
-import Breakpoint from '../components/Breakpoint.svelte';
-import About from '../components/About.svelte';
-import Projects from '../components/Projects.svelte';
-import Form from '../components/Form.svelte'
-import Footer from '../components/Footer.svelte'
+import HeaderMenu from '../pages/en/HeaderMenu.svelte';
+import Home from '../pages/en/Home.svelte';
+import Breakpoint from '../pages/en/Breakpoint.svelte';
+import About from '../pages/en/About.svelte';
+import Projects from '../pages/en/Projects.svelte';
+import Form from '../pages/en/Form.svelte'
+import Footer from '../pages/en/Footer.svelte'
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const aboutURL = getRelativeLocaleUrl("en", "")
 ---
 
 <Layout title = 'Grigoris Portfolio Sample'>
 	<HeaderMenu/>
-	<LanguageSwitcher/>
 	<main id="home" class="mt-16 scroll-mt-36">
 		<Home/>
 		<Breakpoint/>

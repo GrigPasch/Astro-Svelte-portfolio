@@ -115,7 +115,6 @@ div > h2{
 
 section > div > p.line-1{
     margin: 0 auto;
-    white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid rgb(13, 170, 170);
     letter-spacing: 0.15em;
@@ -126,7 +125,6 @@ section > div > p.line-1{
 
 section > div > p.line-2 {
     margin: 0 auto;
-    white-space: nowrap;
     overflow: hidden;
     border-right: .15em solid rgb(13, 170, 170);
     letter-spacing: 0.15em;

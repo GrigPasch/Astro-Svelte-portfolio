@@ -1,6 +1,3 @@
-import '../pages/en/index.astro' 
-import '../pages/gr/index.astro'
-
 export const socials = [
     {
         logo: 'bx bxl-linkedin',
@@ -14,23 +11,23 @@ export const socials = [
 
 export const info = [
     {
-        text: 'About',
+        text: 'ΣΧΕΤΙΚΑ',
     },
     {
-        text: 'Projects',
+        text: 'ΈΡΓΑ',
     },
     {
-        text: 'Contact',
-    },
+        text: 'ΕΠΙΚΟΙΝΩΝΊΑ',
+    }
 ]
 
 export const locales = [
     {
-        text: 'English',
-        link: 'http://localhost:4321/en/#home'
+        text: 'Ελληνικά',
+        link: 'http://localhost:4321/gr/#home'
     },
     {
-        text: 'Greek',
-        link: 'http://localhost:4321/gr/#home'
+        text: 'Αγγλικά',
+        link: 'http://localhost:4321/en/#home'
     }
 ]

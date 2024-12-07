@@ -1,7 +1,7 @@
 <script>
-    const lines = '../assets/lines.avif'
-    import '../assets/style.css';
-    import '../../public/lines.webp'
+    const lines = '../../../public/lines.webp'
+    import '../../assets/style.css';
+    import '../../../public/lines.webp'
 </script>
 
 <section
@@ -15,9 +15,11 @@
     />
     <div class="flex flex-col justify-center gap-y-5 text-center lg:w-[70%] lg:mx-0 md:mb-4 xxs:w-[80%] xxs:mb-6 xxs:mx-auto">
         <h2 class="font-black xl:text-[50px] xs:text-[22px] xxs:text-[20px]">Grigoris Paschalidis</h2>
+
         <p class="line-1 opacity-60 xl:text-[22px] xs:text-[10px] xxs:text-[9px]">
             <span>Embrace Progress</span>
         </p>
+        
         <p class="line-2 opacity-60 xl:text-[22px] xs:text-[10px] xxs:text-[9px]">
             <span>With utmost efficiency</span>
         </p>
